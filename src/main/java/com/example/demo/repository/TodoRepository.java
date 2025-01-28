@@ -1,4 +1,11 @@
-package com.example.demo.TodoRepository;
+package com.example.demo.repository;
 
-public interface TodoRepository {
+import com.example.demo.TodoEntry;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface TodoRepository extends CrudRepository<TodoEntry,Long> {
 }
+
+
